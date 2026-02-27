@@ -9,123 +9,141 @@ body {
   background: #dcdcdc;
   display: flex;
   justify-content: center;
-  padding: 20px 0; /* Top aur bottom padding kam ki hai */
+  padding: 40px 15px;
 }
 
 .resume {
   background: #ffffff;
-  width: 210mm; /* Standard A4 Width */
-  min-height: 297mm; /* Standard A4 Height */
-  padding: 30px 45px; /* Padding ko balanced rakha hai */
+  width: 800px;
+  max-width: 100%;
+  padding: 40px 60px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
 }
 
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 20px; [span_0](start_span)/* Header ke baad ka gap kam kiya */[span_0](end_span)
+  margin-bottom: 35px;
 }
 
 header h1 {
-  font-size: 26px; [span_1](start_span)/* Name ka size thoda chota kiya */[span_1](end_span)
+  font-size: 32px;
   letter-spacing: 2px;
   font-weight: 700;
   color: #333;
 }
 
-.contact {
-  margin-top: 12px;
-  display: flex;
-  justify-content: space-between;
-  [span_2](start_span)align-items: flex-start;[span_2](end_span)
+.role {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #666;
 }
 
-.contact-container {
+/* .contact {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-item svg {
+  width: 14px;
+  height: 14px;
+  fill: #444;
+} */
+
+.contact {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .contact-item {
   display: flex;
   justify-content: flex-start;
   gap: 6px;
-  margin-bottom: 4px; [span_3](start_span)/* Contact lines ke beech gap kam kiya */[span_3](end_span)
-  font-size: 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
   color: #555;
 }
 
 .contact-item svg {
-  width: 12px;
-  height: 12px;
-  [span_4](start_span)fill: #444;[span_4](end_span)
-}
+  width: 14px;
+  height: 14px;
+  fill: #444;
+} 
+
 
 /* Sections */
 section {
-  margin-bottom: 15px; [span_5](start_span)/* Sections ke beech ka gap kam kiya */[span_5](end_span)
+  margin-bottom: 30px;
 }
 
 section h2 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  margin-bottom: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #999;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   color: #333;
 }
 
 section p {
-  font-size: 12px;
+  font-size: 13px;
   color: #555;
-  line-height: 1.4; [span_6](start_span)/* Line height thodi kam ki hai */[span_6](end_span)
+  line-height: 1.6;
 }
 
-/* Items (Education/Project) */
+/* Items */
 .item {
-  [span_7](start_span)margin-bottom: 12px;[span_7](end_span)
+  margin-bottom: 18px;
 }
 
 .top-line {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 13px;
   color: #444;
-  font-weight: bold;
 }
 
 .item h3 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 550;
-  margin: 2px 0;
+  margin: 5px 0;
   color: #444;
-  word-wrap: break-word; /* Lamba text control karne ke liye */
 }
 
-/* Skills & Certificates */
+/* Skills */
 .skills {
   display: flex;
-  justify-content: flex-start;
-  gap: 60px; /* Columns ke beech gap */
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .skills ul {
   list-style: disc;
   padding-left: 18px;
-  font-size: 12px;
-  [span_8](start_span)color: #444;[span_8](end_span)
+  font-size: 13px;
+  color: #444;
 }
 
-.skills li {
-  margin-bottom: 3px; /* List items ka gap kam kiya */
-}
-
-.bottom-bar {
-  height: 10px;
-  background: #5e5e5e;
-  margin-top: auto; /* Ise page ke ekdum niche dhakel dega */
+.skills li{
+    margin-bottom: 8px;
 }
